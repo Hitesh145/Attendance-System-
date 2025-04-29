@@ -1,0 +1,30 @@
+
+  header, section, footer {
+    padding: 20px;
+  }
+  header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  section {
+    border-bottom: 1px solid #ddd;
+  }
+  h2 {
+    color: #333;
+  }
+  input, select, button {
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+  }
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }

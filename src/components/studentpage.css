@@ -1,0 +1,45 @@
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .subject-block {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  .subject-block:hover {
+    transform: translateY(-5px);
+  }
+  .subject-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .attendance {
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .good {
+    background-color: #4CAF50;
+  }
+  .average {
+    background-color: #FFC107;
+  }
+  .low {
+    background-color: #F44336;
+  }
