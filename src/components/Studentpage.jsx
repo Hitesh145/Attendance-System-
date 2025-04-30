@@ -18,7 +18,7 @@ const Data = {
     "computerScience": 90,
     "English": 95
   },
-  "Aditi": {
+  "Aditiya": {
     "Mathematics": 78,
     "Physics": 65,
     "Chemistry": 80,

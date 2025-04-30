@@ -4,7 +4,7 @@ import './login.css'
 
 // Hardcoded data for students and teachers
 // This data would be fetched from a server or database
-const studentData = { "Hitesh": "1234", "Karan": "1234", "Aditi": "1234", "Ravi": "1234", "Priya": "1234" }
+const studentData = { "Hitesh": "1234", "Karan": "1234", "Aditiya": "1234", "Ravi": "1234", "Priya": "1234" }
 
 const teacherData = { "Sharma": "5678", "Gupta": "5678", "Verma": "5678", "Mehta": "5678", "Singh": "5678" }
 
@@ -51,8 +51,11 @@ function Login() {
   return (
     <>
         <section id="login">
-            <h2>Login</h2>
             <div className="form-container">
+            <h2>Login</h2>
+            <div className="form"> 
+
+
                 <form onSubmit={handleLogin}>
                     <label htmlFor="username">Username:</label>
                     <input 
@@ -80,6 +83,7 @@ function Login() {
 
                     <button type="submit">Login</button>
                 </form>
+                </div>
             </div>
         </section>
     </>
