@@ -1,38 +1,74 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import './teacherpage.css'
 
 // Hardcoded data for students' attendance
 // This data would be fetch from a server or database
 const students = [
-  { name: "Hitesh",
+  { name: "Aniket",
     "Mathematics": 92,
     "Physics": 75,
     "Chemistry": 58,
     "computerScience": 88,
     "English": 90
   },
-  { name: "Karan",
+  { name: "Aryan",
     "Mathematics": 85,
     "Physics": 80,
     "Chemistry": 70,
     "computerScience": 90,
     "English": 95
   },
-  { name: "Aditiya" ,
+  { name: "Harshita" ,
     "Mathematics": 78,
     "Physics": 65,
     "Chemistry": 80,
     "computerScience": 75,
     "English": 85
   },
-  { name: "Ravi" ,
+  { name: "Kanan" ,
     "Mathematics": 60,
     "Physics": 70,
     "Chemistry": 55,
     "computerScience": 65,
     "English": 75
   },
-  { name: "Priya" ,
+  { name: "Nitin" ,
+    "Mathematics": 95,
+    "Physics": 90,
+    "Chemistry": 85,
+    "computerScience": 92,
+    "English": 88
+  },
+  { name: "Preeti",
+    "Mathematics": 92,
+    "Physics": 75,
+    "Chemistry": 58,
+    "computerScience": 88,
+    "English": 90
+  },
+  { name: "Shagun",
+    "Mathematics": 85,
+    "Physics": 80,
+    "Chemistry": 70,
+    "computerScience": 90,
+    "English": 95
+  },
+  { name: "Shamak" ,
+    "Mathematics": 78,
+    "Physics": 65,
+    "Chemistry": 80,
+    "computerScience": 75,
+    "English": 85
+  },
+  { name: "Shreya" ,
+    "Mathematics": 60,
+    "Physics": 70,
+    "Chemistry": 55,
+    "computerScience": 65,
+    "English": 75
+  },
+  { name: "Suryansh" ,
     "Mathematics": 95,
     "Physics": 90,
     "Chemistry": 85,
@@ -77,6 +113,9 @@ function Teacherpage() {
       ))}
     </tbody>
   </table>
+  <div className="logout-button">
+      <Link to="/" ><button>Log out </button></Link>
+    </div>
 </div>
   
   

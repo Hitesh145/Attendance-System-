@@ -8,7 +8,7 @@ import Footer from './sections/Footer'
 function Home() {
   return (
     <>
-      <Navbar/>
+      <Navbar withbutton = "true" />
       <Herosection/>
       <About/>
       <Footer/>

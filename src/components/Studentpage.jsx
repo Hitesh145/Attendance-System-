@@ -1,36 +1,36 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './studentpage.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation , Link } from 'react-router-dom'
 
 //hardcoded data for students and their marks
 //This data would be fetched from a server or database.
 const Data = {
-  "Hitesh": {
+  "Aniket": {
     "Mathematics": 92,
     "Physics": 75,
     "Chemistry": 58,
     "computerScience": 88,
     "English": 90
-  },"Karan": { 
+  },"Kanan": { 
     "Mathematics": 85,
     "Physics": 80,
     "Chemistry": 70,
     "computerScience": 90,
     "English": 95
   },
-  "Aditiya": {
+  "Nitin": {
     "Mathematics": 78,
     "Physics": 65,
     "Chemistry": 80,
     "computerScience": 75,
     "English": 85
-  },"Ravi": {
+  },"Suryansh": {
     "Mathematics": 60,
     "Physics": 70,
     "Chemistry": 55,
     "computerScience": 65,
     "English": 75
-  },"Priya": {
+  },"Preeti": {
     "Mathematics": 95,
     "Physics": 90,
     "Chemistry": 85,
@@ -74,7 +74,11 @@ function Studentpage() {
       <div className="subject-name">English</div>
       <div className={`attendance ${getAttendanceClass(Data[username].English)}`}>{Data[username].English}%  </div>
     </div>
+    <div className="logout-button">
+      <Link to="/" ><button>Log out </button></Link>
+    </div>
   </div>
+  
 
 
     </>

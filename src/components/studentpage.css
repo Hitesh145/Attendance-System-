@@ -43,3 +43,11 @@
   .low {
     background-color: #F44336;
   }
+
+.logout-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

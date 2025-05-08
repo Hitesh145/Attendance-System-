@@ -21,19 +21,19 @@ function Footer() {
                     
                     <h3>👨‍💻 Team Members</h3>
                     <div class="team-list">
-                        <ul>
-                            <li>Aryan Sharma</li>
-                            <li>Priya Thakur</li>
-                            <li>Kunal Verma</li>
-                            <li>Neha Gupta</li>
-                            <li>Rohit Rana</li>
+                    <ul>
+                            <li>Aniket</li>
+                            <li>Aryan Mahajan</li>
+                            <li>Harshita Rajput</li>
+                            <li>Kanan Verma</li>
+                            <li>Nitin Rao</li>
                         </ul>
                         <ul>
-                            <li>Simran Sood</li>
-                            <li>Aditya Sharma</li>
-                            <li>Ritika Chauhan</li>
-                            <li>Sahil Dogra</li>
-                            <li>Muskan Thakur</li>
+                            <li>Preeti Thakur</li>
+                            <li>Shagun Sharma</li>
+                            <li>Shamak Chauhan</li>
+                            <li>Shreya Thakur</li>
+                            <li>Suryansh Sharma</li>
                         </ul>
                     </div>
                 </div>

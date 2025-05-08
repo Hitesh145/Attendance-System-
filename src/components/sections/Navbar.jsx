@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import Button from './Button';
 
 
-function Navbar() {
+function Navbar(props) {
   const [clicks, setClick] = useState(false);
   const handleClick = () => setClick(!clicks);
+  const button = props.withbutton === "true" ? (<Button buttonStyle='btn--outline'>SIGN IN</Button>): ""
   return ( 
     <>
       <nav className='navbar'>
@@ -20,21 +21,19 @@ function Navbar() {
           <ul className={clicks ? 'nav-menu active' : 'nav-menu'}>
 
             <li className='nav-item'>
-              <a href='#home' className='nav-links'>Home</a>
+              <a href='./#home' className='nav-links'>Home</a>
             </li>
             <li className='nav-item'>
-              <a href='#about' className='nav-links'>About</a>
+              <a href='./#about' className='nav-links'>About</a>
             </li>
             <li className='nav-item'>
-              <a href='#contacts' className='nav-links'>Contact</a>
+              <a href='./#contacts' className='nav-links'>Contact</a>
             </li>
             <li className='nav-item'>
-              {/* <Link to='/sign-up' >
-              <button className='btn'>Sign up</button>
-              </Link> */}
-              <Button buttonStyle='btn--outline'>SIGN IN</Button>
+              {button}
+              
+            {/* { if (props.withbutton){ <Button buttonStyle='btn--outline'>SIGN IN</Button> } } */}
             </li>
-            {/* <Button buttonStyle='btn--outline'>SIGN UP</Button> */}
           </ul>
         </div>
       </nav>
